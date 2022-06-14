@@ -9,10 +9,9 @@ p{color:Black !important;}
 
 # Spacing 
 ## Margin and padding
-*m-,y- gibi öneklerinden  sonra 0-5 arasında değerler vererek öğenin her kenarına boşluk verebiliriz.* 
+*m-,y- gibi öneklerinden  sonra 0-5 arasında değerler vererek öğenin her kenarına boşluk verebiliriz.* <br/> *m-{0-5} her kenara margin vermek için y-{0-5} her kenara padding vermek için* 
 
->*m-{0-5} her kenara margin vermek için*
->*y-{0-5} her kenara padding vermek için*
+
 ---
 
 #### Belirtilen kenar doğrultusunda padding ve margin vermek için
