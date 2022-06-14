@@ -1,0 +1,250 @@
+@use 'sass:math';
+@import "variable";
+
+$utilities: (
+  "padding": (
+    "property":"padding",
+    "prefix": "p",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8
+    ),
+  ),
+  "padding-left": (
+    "property":"padding-left",
+    "prefix": "pl",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8
+    ),
+  ),
+  "padding-right": (
+    "property":"padding-right",
+    "prefix": "pr",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8
+    ),
+  ),
+  "padding-top": (
+    "property":"padding-top",
+    "prefix": "pt",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8
+    ),
+  ),
+  "padding-bottom": (
+    "property":"padding-bottom",
+    "prefix": "pb",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 4,
+      "4": $base-padding * 6,
+      "5": $base-padding * 8
+    ),
+  ),
+  "margin": (
+    "property":"margin",
+    "prefix": "m",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8
+    ),
+  ),
+  "margin-left": (
+    "property":"margin-left",
+    "prefix": "ml",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8
+    ),
+  ),
+  "margin-right": (
+    "property":"margin-right",
+    "prefix": "mr",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8
+    ),
+  ),
+  "margin-top": (
+    "property":"margin-top",
+    "prefix": "mt",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8
+    ),
+  ),
+  "margin-bottom": (
+    "property":"margin-bottom",
+    "prefix": "mb",
+    "values": (
+      "0": 0,
+      "1": $base-margin,
+      "2": $base-margin * 2,
+      "3": $base-margin * 4,
+      "4": $base-margin * 6,
+      "5": $base-margin * 8
+    ),
+  ),
+
+  "opacity": (
+    "property":"opacity",
+    "prefix": "o",
+    "values": (
+      "10": 0.1,
+      "20": 0.2,
+      "30": 0.3,
+      "40": 0.4,
+       "50": 0.5,
+      "60": 0.6,
+      "70": 0.7,
+      "80": 0.8,
+      "90": 0.9,
+      "100": 1,
+    ),
+  ),
+  "border-radius": (
+    "property":"border-radius",
+    "prefix": "br",
+    "values": (
+      "default": $base-border-radius,
+      "none": 0,
+      "xs": math.div($base-border-radius, 4),
+      "sm": math.div($base-border-radius, 2),
+      "lg": $base-border-radius * 2,
+      "full": 50%,
+    )
+  ),
+  "display": (
+    "property":"display",
+    "prefix": "d",
+    "values": (
+      "n": none,
+      "b": block,
+      "f": flex,
+      "i": inline,
+      "i-b": inline-block
+    )
+  ),
+  "font-size": (
+    "property":"font-size",
+    "prefix": "font",
+    "values": (
+      "xs": $font-size-xs,
+      "md": $base-font-size,
+      "lg": $font-size-lg,
+      "xl": $font-size-xl,
+      "xxl": $font-size-xxl
+    )
+  ),
+    "margin-x": (
+    "property":"margin",
+    "prefix": "mx",
+    "values": (
+      "0": 0,
+      "1":0 $base-padding,
+      "2":0 $base-padding * 2,
+      "3":0 $base-padding * 4,
+      "4":0 $base-padding * 6,
+      "5":0 $base-padding * 8
+    )
+    ),
+      "margin-y": (
+    "property":"margin",
+    "prefix": "my",
+    "values": (
+      "0": 0,
+      "1": $base-padding 0,
+      "2": $base-padding * 2 0,
+      "3": $base-padding * 4 0,
+      "4": $base-padding * 6 0,
+      "5": $base-padding * 8 0
+    )
+    ),
+      "padding-y": (
+    "property":"padding",
+    "prefix": "py",
+    "values": (
+      "0": 0,
+      "1": $base-padding 0,
+      "2": $base-padding * 2 0,
+      "3": $base-padding * 4 0,
+      "4": $base-padding * 6 0,
+      "5": $base-padding * 8 0
+    )
+    ),
+    "padding-x": (
+    "property":"padding",
+    "prefix": "px",
+    "values": (
+      "0": 0,
+      "1":0 $base-padding,
+      "2":0 $base-padding * 2,
+      "3":0 $base-padding * 4,
+      "4":0 $base-padding * 6,
+      "5":0 $base-padding * 8
+    )
+    ),
+    "letter-spacing": (
+    "property":"letter-spacing",
+    "prefix": "letter-spacing",
+    "values": (
+   "xs":0.3px,
+   "md":0.5px,
+   "lg":1px,
+   "xl":2px
+   )
+   ),
+    "transition": (
+    "property":"transition",
+    "prefix": "t",
+    "values": (
+    "slow-xl": 900ms linear 50ms,
+    "slow-lg": 700ms linear 50ms,
+    "slow-md": 500ms linear 50ms,
+    "slow-xs": 400ms linear 50ms,
+    "fast-xl": 300ms linear 30ms,
+    "fast-lg": 250ms linear 25ms,
+    "fast-md": 200ms linear 20ms,
+    "fast-xs": 150ms linear 10ms,
+    )
+  )
+);
+
+

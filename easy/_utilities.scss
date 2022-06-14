@@ -1,0 +1,81 @@
+
+.mx-auto{
+  margin: 0 auto;
+}
+.my-auto{
+  margin: auto 0;
+}
+
+// padding,margin,opacity,border-radius,display,font-size,letter-spacing,transition
+@each $p, $map in $utilities {
+
+ $prefix : map-get($map, "prefix");
+ $values : map-get($map, "values");
+ $property : map-get($map, "property");
+ @each $k, $v in $values {
+   @if($k == "default"){
+      .#{$prefix}{
+        
+        #{$property} : $v
+       }
+
+  }@else{
+
+ //values is a map and css properties are defined with properties inside it
+ //The key values in it are defined to form a class with its prefix.
+ 
+   .#{$prefix}-#{$k}{
+     #{$property}: $v;
+     }
+
+   }
+  }
+}
+
+//  font-weight 100, 200, 300, 400, 500, 600, 700, 800, 900;
+@each $v in $f-weight {
+  .fw-#{$v}{
+    font-weight: $v;
+  }
+}
+
+// font-style normal,italic,oblique
+@each $v in $f-style {
+    .fs-#{$v}{
+      font-style: $v;
+    }
+}
+
+// text-align left,right,center,justify,initial,inherit
+@each $v in $text-align {
+  .t-#{$v}{
+    text-align: $v;
+  }
+}
+
+// position static, relative,fixed,absolute,sticky
+@each  $v in $position {
+    .p-#{$v}{
+      position: $v;
+  }
+}
+ 
+// visible , hidden
+@each $v in $visibility {
+  .v-#{$v}{
+    visibility: $v;
+  }
+}
+
+// overflow-x visible,hidden,scroll,auto,initial,inherit
+@each $v in $overflow-x {
+    .ox-#{$v}{
+      overflow-x: $v;
+  }
+}
+// overflow-y visible,hidden,scroll,auto,initial,inherit
+@each $v in $overflow-y {
+    .oy-#{$v}{
+      overflow-y: $v;
+  }
+}
