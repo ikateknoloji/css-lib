@@ -1,11 +1,4 @@
-<style>
-H1{color:#1B2430 !important;}
-H2{color:DarkOrange !important;}
-H3{color:#51557E !important;}
-H4{color:#51557E !important;}
-H5{color:#4CACBC !important;}
-p{color:Black !important;}
-</style>
+
 
 # Spacing 
 ## Margin and padding
