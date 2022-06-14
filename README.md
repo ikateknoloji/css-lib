@@ -31,12 +31,12 @@ p{color:Black !important;}
 ### Yatay veya Dikey
 
 ##### Margin
-* my-{0-5} padding-top
-* my-{0-5} padding-bottom
+* my-{0-5} Y ekseninde margin
+* mx-{0-5} X ekseninde margin
 
 ##### Padding
-* py-{0-5} padding-left
-* px-{0-5} padding-right
+* py-{0-5}  Y ekseninde Padding
+* px-{0-5}  X ekseninde Padding
 
 ### X ve Y Ekseninde
 * my-auto margin y ekseni auto
